@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.bharat</groupId>
+  <artifactId>learnspring</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>learnspring</name>
+  <description>project to learn spring</description>
+
+  <properties>
+  	<spring.version>4.0.6.RELEASE</spring.version>
+  	<javax.inject.version>1</javax.inject.version>
+  	<google.guava.versio>18.0</google.guava.versio>
+  </properties>
+
+  <dependencies>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-context</artifactId>
+  		<version>${spring.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>javax.inject</groupId>
+  		<artifactId>javax.inject</artifactId>
+  		<version>${javax.inject.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.google.guava</groupId>
+  		<artifactId>guava</artifactId>
+  		<version>${google.guava.versio}</version>
+  	</dependency>
+  </dependencies>
+</project>
