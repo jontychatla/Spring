@@ -1,4 +1,4 @@
-package com.rest.spring.person;
+package com.rest.spring.domain;
 
 public class Person {
 

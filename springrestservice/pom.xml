@@ -28,7 +28,10 @@
 
   <properties>
     <start-class>com.rest.spring.Application</start-class>
-      <guava.version>18.0</guava.version>
+    <guava.version>18.0</guava.version>
+    <!-- one can override specific version for the dependencies provided by boot starter
+         Below I am overriding java version -->
+    <java.version>1.8</java.version>
   </properties>
 
   <build>
