@@ -2,16 +2,18 @@ package com.bharat.inject;
 
 import javax.inject.Inject;
 
+import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Component;
 
 @Component
+@Import(Configuration.class)
 public class DataServiceImpl implements DataService {
 
   @Inject
-  private Person foo;
+  private Person person;
 
   public Person getData() {
-    return foo;
+    return person;
   }
 
 }
