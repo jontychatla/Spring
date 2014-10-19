@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Component;
 
 @Component
-@Import(Configuration.class)
+@Import(ApplicationConfig.class)
 public class DataServiceImpl implements DataService {
 
   @Inject

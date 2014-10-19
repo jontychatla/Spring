@@ -4,10 +4,12 @@ public class Person {
 
   private String name;
   private int age;
+  private Address address;
 
-  public Person(String name, int age) {
+  public Person(String name, int age, Address address) {
     this.name = name;
     this.age = age;
+    this.address = address;
   }
 
   public String getName() {
@@ -26,8 +28,16 @@ public class Person {
     this.age = age;
   }
 
-   @Override
+   public Address getAddress() {
+    return address;
+  }
+
+  public void setAddress(Address address) {
+    this.address = address;
+  }
+
+  @Override
     public String toString() {
-      return new StringBuffer(name + " "+age).toString();
+      return new StringBuffer(name + " "+age + " "+address.getAddress()).toString();
     }
 }
